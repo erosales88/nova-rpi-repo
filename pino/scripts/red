@@ -1,0 +1,4 @@
+sudo tunctl -u $(whoami) -t tap1
+sudo ifconfig tap1 192.168.1.1
+sudo route add -net 192.168.1.0 netmask 255.255.255.0 dev tap1
+sudo sh -c "echo 1 > /proc/sys/net/ipv4/ip_forward"

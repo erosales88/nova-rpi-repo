@@ -1,0 +1,19 @@
+Package: dpkg
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: admin
+Installed-Size: 7244
+Origin: debian
+Maintainer: Dpkg Developers <debian-dpkg@lists.debian.org
+Bugs: debbugs://bugs.debian.org
+Architecture: armel
+Version: 1.14.31
+Replaces: manpages-de (<= 0.4-3), manpages-pl (<= 20051117-1)
+Pre-Depends: libc6 (>= 2.7-1), libgcc1 (>= 1:4.3), coreutils (>= 5.93-1),
+lzma
+Suggests: apt
+Conflicts: apt (<< 0.7.7), aptitude (<< 0.4.7-1), dpkg-dev (<< 1.14.16),
+dpkg-iasearch (<< 0.11), sysvinit (<< 2.82-1)
+Conffiles:
+Homepage: http://wiki.debian.org/Teams/Dpkg
